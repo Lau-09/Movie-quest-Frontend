@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <div class="padre">
+                <div class="logo">
+                    <a href="#"><img src="./imagenes/logo.jpeg" class="logo"></a>
+                </div>
+                <div class="buscador">
+                    <input class="buscador" type="text" id="buscador_cine" placeholder="      Buscar Película">
+                    <button class="boton_buscar">Buscar</button>
+                </div>
+                <div class="mas_opciones">
+                    <a id="btnAbrir" class="boton1">Iniciar Sesion</a>
+                        <div id="miVentanaFlotante" class="ventana-flotante">
+                            <div class="contenido-ventana">
+                                <div class="login">
+                                    <a id="btnCerrar" class="cerrar">X</a>
+                                    <h2>Iniciar Sesión</h2>
+                                    <div class="contenedor">
+                                        <form id="loginForm" action="" method="post">
+                                            <label for="username">Usuario:</label><br><br>
+                                            <input type="text" id="username" name="username" required><br>
+                                            <label for="password">Contraseña:</label><br><br>
+                                            <input type="password" id="password" name="password" required><br>
+                                            <button type="submit" class="boton">Iniciar Sesión</button><br><br>
+                                            <p>¿No tienes cuenta?</p><br>
+                                            <a id="btnAbrir3">¡Registrate!</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <a id="btnAbrir2" class="boton2">Otros Servicios</a>
+                        <div id="miVentanaFlotante2" class="ventana-flotante">
+                            <div class="contenido-ventana">
+                                <a id="btnCerrar2">X</a>
+                                <h2>¡Nuestros Combos!</h2>
+                                <h3>Combo 2</h3>
+                                <p>1 Chocolatina, 1 Gaseosa, 1 Paquete de papas, 1 Perro</p><br>
+                                <h3>Combo 5</h3>
+                                <p>1 Crispetas, 2 Gaseosas, 2 Perros</p><br>
+                                <h3>Combo 6</h3>
+                                <p>1 Crispetas, 2 Gaseosas</p><br>
+                                <h3>Combo 8</h3>
+                                <p>2 Gaseosas, 2 Perros</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="hijo">
+                <div class="slide">
+                    <div class="slide-inner">
+                        <input class="slide-open" type="radio" id="slide-1" 
+                              name="slide" aria-hidden="true" hidden="" checked="checked">
+                        <div class="slide-item">
+                            <img src="https://www.allcine.com.co/archivos/a17566a5a707142151291bbc3f99046faffb1778.jpeg">
+                        </div>
+                        <input class="slide-open" type="radio" id="slide-2" 
+                              name="slide" aria-hidden="true" hidden="">
+                        <div class="slide-item">
+                            <img src="https://www.allcine.com.co/archivos/257a678c335256ab4c2f73c2e4c7021bff8652a1.jpeg">
+                        </div>
+                        <input class="slide-open" type="radio" id="slide-3" 
+                              name="slide" aria-hidden="true" hidden="">
+                        <div class="slide-item">
+                            <img src="https://www.allcine.com.co/archivos/503a87573a2e069a7a9071eb95a73fa367d532e6.jpeg">
+                        </div>
+                        <input class="slide-open" type="radio" id="slide-4" 
+                              name="slide" aria-hidden="true" hidden="">
+                        <div class="slide-item">
+                            <img src="https://www.allcine.com.co/archivos/bb91405e6b999c625256280a6be3ba2d1ee923f8.jpeg">
+                        </div>
+                        <label for="slide-4" class="slide-control prev control-1">‹</label>
+                        <label for="slide-3" class="slide-control prev control-1">›</label>
+                        <label for="slide-2" class="slide-control next control-2">‹</label>
+                        <label for="slide-1" class="slide-control prev control-2">›</label>
+                        <label for="slide-4" class="slide-control prev control-3">‹</label>
+                        <label for="slide-3" class="slide-control next control-3">›</label>
+                        <label for="slide-2" class="slide-control prev control-4">‹</label>
+                        <label for="slide-1" class="slide-control prev control-4">›</label>
+                        <ol class="slide-indicador">
+                            <li>
+                                <label for="slide-1" class="slide-circulo">•</label>
+                            </li>
+                            <li>
+                                <label for="slide-2" class="slide-circulo">•</label>
+                            </li>
+                            <li>
+                                <label for="slide-3" class="slide-circulo">•</label>
+                            </li>
+                            <li>
+                                <label for="slide-4" class="slide-circulo">•</label>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div><br>
+            <div class="peliculas">
+                <div class="card">
+                    <div class="front">
+                      <img class="carta" src="https://elcomercio.pe/resizer/AIMha2V-Eubhe8864v7HMtG0U40=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/NR72SKLJ45D2NAB72OYXNQFDEA.jpg">
+                    </div>
+                    <div class="back">
+                      <h1>Barbie</h1>
+                      <p>Duración: 114 Minutos</p>
+                      <p>Genero: Comedia / Drama</p>
+                      <p>Vivir en Barbie Land es ser un ser perfecto en un lugar perfecto, a menos que tengas una crisis existencial total, o seas un Ken..</p>
+                      <h3>Para todo el público</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                      <img class="carta" src="https://archivos-cms.cinecolombia.com/images/9/6/4/2/42469-2-esl-CO/679a19b51d45-opp_cineco_2-poster_480x670.jpg">
+                    </div>
+                    <div class="back">
+                      <h1>Oppenheimer</h1>
+                      <p>Duración: 118 Minutos</p>
+                      <p>Genero: Drama / Suspenso</p>
+                      <p>Escrita y dirigida por Christopher Nolan, Oppenheimer es un thriller épico que sumerge al público en la trepidante paradoja del enigmático hombre que debe arriesgarse a destruir el mundo para poder salvarlo..</p>
+                      <h3>Mayores de 12</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                      <img class="carta" src="https://pics.filmaffinity.com/Misiaon_imposible_Sentencia_mortal_Parte_1-902615661-large.jpg">
+                    </div>
+                    <div class="back">
+                      <h1>Mision Imposible</h1>
+                      <p>Duración: 163 Minutos</p>
+                      <p>Genero: Accion / Suspenso</p>
+                      <p>En Misión Imposible: Sentencia Mortal Parte 1, Ethan Hunt (Tom Cruise) y su equipo IMF se embarcan en su misión más peligrosa hasta el momento: Rastrear un arma nueva y aterradora que amenaza a toda la humanidad antes de que caiga en las manos equivocadas. Con el control del futuro y el destino del mundo en riesgo, y fuerzas oscuras del pasado de Ethan acercándose, comienza una carrera mortal alrededor del mundo. Confrontado por un enemigo misterioso y todopoderoso, Ethan se ve obligado a considerar que nada puede importar más que esta misión, ni siquiera las vidas de aquellos que más quiere.</p>
+                      <h3>Mayores de 12</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="front">
+                      <img class="carta" src="https://www.procinal.com/uploads/PELICULAS/Img_movies/Img_360x500/poster-la-noche-del-demonio.jpg">
+                    </div>
+                    <div class="back">
+                      <h1>La noche del demonio</h1>
+                      <p>Duración: 107 Minutos</p>
+                      <p>Genero: Terror / Suspenso</p>
+                      <p>En La Noche del Demonio: La Puerta Roja, el reparto original del clásico de terror vuelve para el capítulo final de la saga aterradora de la familia Lambert. Para acabar con sus demonios de una vez por todas, Josh (Patrick Wilson) y un Dalton en edad universidaria (Ty simpkins) deben adentrarse más en el purgatorio que nunca antes, enfrentándose al pasado oscuro de su familia y un conjunto de nuevos y más horripilantes terrores que se esconden detrás de la puerta roja.</p>
+                      <h3>Mayores de 15 años</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="barra_inferior">
+                <div class="right">
+                    <a href="#"><img src="./imagenes/mapa.webp" class="right"></a>
+                </div>
+                <div class="left">
+                    <a href="#"><img src="./imagenes/mensajes.png" class="left"></a>
+                </div>
+            </div>
+        <script src="script.js"></script>
+    </header>
+</body>
+</html>
